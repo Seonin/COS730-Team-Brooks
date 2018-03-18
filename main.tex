@@ -1,0 +1,89 @@
+\documentclass[]{article}
+
+% Packages
+\usepackage[nottoc,notlof,notlot]{tocbibind} 
+\usepackage[margin=1in]{geometry}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titletoc}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\usepackage{lmodern}
+\usepackage{sectsty}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{	Architectural Requirements Specifications and Design of QuantumUP}
+\fancyhead[C]{}
+\fancyhead[R]{Last revised: 17 March 2018}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[L]{Team Brooks}
+\fancyfoot[C]{}
+\fancyfoot[R]{Page \thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\sectionfont{\fontfamily{lmss}\selectfont}
+\subsectionfont{\fontfamily{lmss}\selectfont}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+
+% Title Page
+\begin{document}\fontfamily{lmss}\selectfont
+	\begin{center}\thispagestyle{empty}
+		\includegraphics{uplogo.jpg}
+		
+		{\Huge 
+			Team Brooks \linebreak
+			Architectural Requirements Specifications and Design of QuantumUP \linebreak 
+			\par}
+		 
+        
+        \begin{LARGE}
+            Seonin David u15063021
+            \linebreak
+            \linebreak
+         
+            \linebreak
+            \linebreak
+         
+            \linebreak
+            \linebreak
+       
+            \linebreak
+            \linebreak
+           
+        \end{LARGE}
+    \end{center}
+    
+    \newpage
+	\tableofcontents
+	\newpage
+	\clearpage
+	
+    \section{Execution Manager}
+    \input{execution_manager/execution_manager.tex}
+    \newpage
+    
+    \section{Users Unit}
+    \input{users_unit/users_unit.tex}
+    \newpage
+    
+    \section{Input Unit}
+    \input{input_unit/input_unit.tex}
+    \newpage
+    
+    \section{Admin UI}
+    \input{admin_ui/admin_ui.tex}
+    \newpage
+    
+    \section{Deployment Diagram}
+   
+    \newpage
+\end{document}
