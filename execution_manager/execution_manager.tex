@@ -12,7 +12,7 @@
 \subsection{Software System Attributes}
 { 
     \begin{flushleft}
-    \par\textbf{Availability: }This process is only accesable via the execution manager.\newline
+    \par\textbf{Availability: }This process is only accessible via the execution manager.\newline
     
     \par\textbf{Modularity: }By using the mediator pattern and encapsulating the modules it makes it easy to add or remove modules.\newline
   
@@ -28,7 +28,7 @@
 	    \small{Figure 1: Class diagram for Execution Manager}
     \end{center}
     
-    \par {\textbf{Design Pattern Used} \\ \\
+    \par{\textbf{Design Pattern Used} \\ \\
 	I used the mediator design pattern because the execution manager uses the input unit as well as the node manager to perform the build runs and execute experiment respectively. The execution manager also persists to the admin UI and the Metrologist UI thus a pattern that can communicate with the reinvent modules and not be extremely dependent is needed. That is why I selected the mediator pattern because it encapsulates the way that objects communicate with each other thus the relevant modules can communicate with each other without knowing the components underlying structure. By using this pattern the modules will be loosely coupled which makes the overall structure of the system much better and easier to manage.In this case the mediator is the \textbf{Execution Manager}  is the Mediator. The \textbf{Input Unit} and \textbf{Node Manager } are the colleagues of the mediator. The \textbf{Metrologist} and \textbf{Admin UI} are the colleagues and as you can see modules are encapsulated.}
 		
 \subsection{Activity diagram}
@@ -54,7 +54,7 @@
 
 
 \subsection{Use Case diagram}
-    \includegraphics[width=12cm,height=26cm,keepaspectratio]{execution_manager/images/execution_manager_use_case_diagram.png}
+    \includegraphics[width=12cm,height=15cm,keepaspectratio]{execution_manager/images/execution_manager_use_case_diagram.png}
     \begin{center}
     	\small{Figure 5: Use case diagram for Execution Manager}
     \end{center}
